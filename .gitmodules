@@ -1,0 +1,6 @@
+[submodule "LangChain-Chinese-Getting-Started-Guide"]
+	path = LangChain-Chinese-Getting-Started-Guide
+	url = git@github.com:liaokongVFX/LangChain-Chinese-Getting-Started-Guide.git
+[submodule "geektime-ai-course"]
+	path = geektime-ai-course
+	url = https://github.com/chenpx976/geektime-ai-course
