@@ -7,3 +7,9 @@
 [submodule "langchain-tutorials"]
 	path = langchain-tutorials
 	url = git@github.com:gkamradt/langchain-tutorials.git
+[submodule "plugnplai"]
+	path = plugnplai
+	url = https://github.com/edreisMD/plugnplai.git
+[submodule "langchain"]
+	path = langchain
+	url = https://github.com/hwchase17/langchain.git
