@@ -13,3 +13,6 @@
 [submodule "langchain"]
 	path = langchain
 	url = https://github.com/hwchase17/langchain.git
+[submodule "openai-cookbook"]
+	path = openai-cookbook
+	url = https://github.com/openai/openai-cookbook.git
