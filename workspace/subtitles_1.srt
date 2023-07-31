@@ -1,0 +1,199 @@
+1
+00:00:16,940 --> 00:00:29,519
+thank you [Music]
+
+2
+00:00:34,320 --> 00:00:38,040
+in this video you will learn the fundamentals of the Godot gaming engine
+
+3
+00:00:38,040 --> 00:00:42,960
+we will start with the program setup and its key Concepts from there we will
+
+4
+00:00:42,960 --> 00:00:47,820
+cover a broad range of topics like Tire Maps animation players lights particle
+
+5
+00:00:47,820 --> 00:00:52,800
+effects shaders and user interfaces we will also cover more advanced topics
+
+6
+00:00:52,800 --> 00:00:57,360
+like skeleton animations and pathfinding if none of these words mean anything to
+
+7
+00:00:57,360 --> 00:01:01,559
+you don't worry I'm going to explain everything from scratch either way by
+
+8
+00:01:01,559 --> 00:01:04,799
+the end of the video you should have a strong understanding of how to create
+
+9
+00:01:04,799 --> 00:01:09,240
+basically any 2D game in Godot and you will also have a really good foundation
+
+10
+00:01:09,240 --> 00:01:14,040
+to start with 3D games before we begin a huge shout out to the sponsor of this
+
+11
+00:01:14,040 --> 00:01:19,200
+video not pass business when making a game you will end up with a lot of data
+
+12
+00:01:19,200 --> 00:01:23,580
+and backing all of that up is a nightmare you want to access your data
+
+13
+00:01:23,580 --> 00:01:27,960
+from anywhere from any operating system it should be convenient and it should be
+
+14
+00:01:27,960 --> 00:01:31,560
+secure both from hackers and from your house burning down
+
+15
+00:01:31,560 --> 00:01:36,060
+especially security is a major concern having my accounts hacked would be a
+
+16
+00:01:36,060 --> 00:01:39,600
+disaster for me and if it can happen to a large organization like city project
+
+17
+00:01:39,600 --> 00:01:44,100
+red or Linus Tech tips it could happen to me it could happen to you or it could
+
+18
+00:01:44,100 --> 00:01:47,579
+happen to your company not past business is an excellent
+
+19
+00:01:47,579 --> 00:01:51,479
+solution for all of that it safely stores your passport in one accessible
+
+20
+00:01:51,479 --> 00:01:55,979
+location and even enters your login credentials for you this makes it super
+
+21
+00:01:55,979 --> 00:01:59,700
+easy to save your game projects both on GitHub and Google Drive and have access
+
+22
+00:01:59,700 --> 00:02:04,619
+to them everywhere in the world it even lets you identify weak passwords and it
+
+23
+00:02:04,619 --> 00:02:09,060
+checks if any of your existing passwords has been leaked online on top of that
+
+24
+00:02:09,060 --> 00:02:13,319
+you can also set up biometric identification and use multi-factor
+
+25
+00:02:13,319 --> 00:02:17,220
+authentification notepass business also works with
+
+26
+00:02:17,220 --> 00:02:21,660
+unlimited passports including Wi-Fi credentials and credit cards so even for
+
+27
+00:02:21,660 --> 00:02:24,780
+things Beyond work it can be incredibly useful
+
+28
+00:02:24,780 --> 00:02:28,440
+if you want to sleep peacefully at night and not worry about your passwords check
+
+29
+00:02:28,440 --> 00:02:31,980
+out notepass business in the description and the link comment
+
+30
+00:02:31,980 --> 00:02:36,959
+if you go to notepass.com clearcode you will get a free month of trial for an
+
+31
+00:02:36,959 --> 00:02:41,220
+amazing password manager and also help me make more videos so definitely check
+
+32
+00:02:41,220 --> 00:02:44,940
+it out all right let's get started first of all
+
+33
+00:02:44,940 --> 00:02:47,879
+what is Kudo and how does it help you make a game
+
+34
+00:02:47,879 --> 00:02:52,560
+Fido is a game engine which means it is an app that lets you display images play
+
+35
+00:02:52,560 --> 00:02:56,760
+sounds capture user input and stuff like that the dough can do even more advanced
+
+36
+00:02:56,760 --> 00:03:01,140
+things like physics calculations pathfinding skeleton animations and
+
+37
+00:03:01,140 --> 00:03:05,340
+networking for multiplayer games all you have to do is to combine the various
+
+38
+00:03:05,340 --> 00:03:10,739
+Concepts and then create your game this could either be a 2d or a 3D game
+
+39
+00:03:10,739 --> 00:03:15,360
+Godot supports both other game engines you may have heard of are unity and
+
+40
+00:03:15,360 --> 00:03:19,620
+unreal there are hundreds of engines But ultimately they all do basically the
+
+41
+00:03:19,620 --> 00:03:22,860
+same thing one major advantage of Godot is that it
+
+42
+00:03:22,860 --> 00:03:27,659
+is entirely free and Community developed you never have to pay for anything you
+
+43
+00:03:27,659 --> 00:03:31,140
+don't have to sign away your soul in some legal text you don't even have to
+
+44
+00:03:31,140 --> 00:03:35,760
+create an account all you have to do is go to godotengine.com and click on
+
+45
+00:03:35,760 --> 00:03:39,599
+download latest then you can select a version that fits your operating system
+
+46
+00:03:39,599 --> 00:03:43,860
+although Godot will likely detect the right version for you on the website so
+
+47
+00:03:43,860 --> 00:03:47,340
+just click on Godot engine and you should be good with that you are
+
+48
+00:03:47,340 --> 00:03:51,959
+downloading a zip file and if you extract that you get two files one is
+
+49
+00:03:51,959 --> 00:03:54,959
+Godot itself the other would open a console
+
+50
+00:03:54,959 --> 00:03:59,400
+you can use the latter one for debugging but I would just ignore it so I'll just
